@@ -1,0 +1,11 @@
+<%
+    if(session.getAttribute("uname")!=null)
+    {
+            session.removeAttribute("uname");
+     }
+    if(session.getAttribute("adminname")!=null)
+    {
+           session.removeAttribute("adminname");
+    }
+    response.sendRedirect("index.jsp");
+%>
